@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: rgb(214, 214, 214);
+}
+
+.about {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.about::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../public/main.jpg");
+  background-size: cover;
+  z-index: -1;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.about p {
+  text-align: center;
+}
+
+.more {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.more::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../../../public/mainFooter.jpg");
+  background-size: cover;
+  z-index: -1;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.more > div {
+  min-width: 300px;
+  width: 600px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.more img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.more h2 {
+  font-size: 2.5rem;
+}
+
+.more p {
+  font-size: 1.5rem;
+}
+
+.more > div > div {
+  margin-left: 2rem;
+}
+
+.pMore {
+  position: absolute;
+  border: 1px solid rgb(154, 154, 154);
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border-radius: 1rem;
+  transition: opacity 0.5s;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.pMore p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h2{
+  margin: 0;
+}
